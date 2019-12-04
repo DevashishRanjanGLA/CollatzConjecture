@@ -5,15 +5,15 @@ import java.util.List;
 
 public class Collatz {
     public List<Integer> getCollatzStringForNumber(int n) {
-        double t1;
+
         List<Integer> list = new ArrayList<Integer>();
         for (int i = n; i <= n; ++i) {
             if (i % 2 == 0) {
-                t1 = 0.5 * i;
+                i = i / 2;
             } else {
-                t1 = (i * 3) + 1;
+                i = i * 3 + 1;
             }
-            list.add((int) t1);
+            list.add(i);
         }
         return list;
     }
