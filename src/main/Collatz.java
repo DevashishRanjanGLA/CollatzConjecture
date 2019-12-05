@@ -3,8 +3,8 @@ package main;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Collatz {
-    public List<Integer> getCollatzStringForNumber(int n) {
+class Collatz {
+    List<Integer> getCollatzStringForNumber(int n) {
 
         List<Integer> list = new ArrayList<Integer>();
         while (n != 1) {
@@ -16,5 +16,7 @@ public class Collatz {
             list.add(n);
         }
         return list;
+
     }
+
 }
